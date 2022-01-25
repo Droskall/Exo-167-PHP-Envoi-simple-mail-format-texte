@@ -39,3 +39,5 @@ if (mail($to, $from, $message)) {
 else {
     echo "Une erreur est survenue lors de l'envoi du mail";
 }
+
+file_put_contents('mails.txt', $message);
